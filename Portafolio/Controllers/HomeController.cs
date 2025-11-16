@@ -15,7 +15,12 @@ namespace Portafolio.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var persona = new Persona()
+            {
+                Nombre = "Sebastian Germoso Marrero",
+                Edad = 18
+            };
+            return View(persona);
         }
 
         public IActionResult Privacy()
