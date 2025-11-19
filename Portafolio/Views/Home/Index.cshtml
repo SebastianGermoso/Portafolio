@@ -1,65 +1,66 @@
 ﻿@model Persona
 
 @{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Soy @Model.Nombre, y tengo @Model.Edad años</h1>
-    <h2>Desarrollador Junior en C#, ASP.NET y SQL</h2>
+	<h1 class="display-4">Soy @Model.Nombre, y tengo @Model.Edad años</h1>
+	<h2>Desarrollador Junior en C#, ASP.NET y SQL</h2>
 
-    <img id="foto" src="~/imagenes/foto.jpg" alt="Foto de Sebastian"/>
+	<img id="foto" src="~/imagenes/foto.jpg" alt="Foto de Sebastian" />
 </div>
 
 <div class="text-center">
-    <img id="imagen-dotnet" src="~/imagenes/dotnet-imagen-2.png" alt="dotnet logo" />
-</divc>
-
-<div class="row justify-content-center text-center bg-primary">
-    <div class="col col-md-7 seccion-bienvenida">
-        <h1>Te doy la bienvenida a mi portafolio</h1>
-        <p>
-            He estado desarrollando software de manera independiete desde 2022 cuando aprendi C# en la escuela,
-            desde aquel entonces he esto aprendiendo programacion en herramientas diferentes como los son ASP.NET, Sql, Python y Java.
-            pero mi mayor experiencia es en C#, actualmente soy estudiante de la carrera universitaria de Ingenieria en Software en UAPA.
-            Mi objetivo es dedicarme a la programacion ya que es algo que me emociona.
-            
-        </p>
-    </div>
+	<img id="imagen-dotnet" src="~/imagenes/dotnet-imagen-2.png" alt="dotnet logo" />
 </div>
 
-<div class="row justify-content-md-align-content-center text-center">
-    <div class="col col-3">
-        <h3>Backend</h3>
+	<div class="row justify-content-center text-center bg-primary">
+		<div class="col col-md-7 seccion-bienvenida">
+			<h1>Te doy la bienvenida a mi portafolio</h1>
+			<p>
+				He estado desarrollando software de manera independiete desde 2022 cuando aprendi C# en la escuela,
+				desde aquel entonces he esto aprendiendo programacion en herramientas diferentes como los son ASP.NET, Sql, Python y Java.
+				pero mi mayor experiencia es en C#, actualmente soy estudiante de la carrera universitaria de Ingenieria en Software en UAPA.
+				Mi objetivo es dedicarme a la programacion ya que es algo que me emociona.
 
-        <p>
-            Actualmente busco desarrollarme como programador backend.
-        </p>
+			</p>
+		</div>
+	</div>
 
-        <p class="text-primary cabecera">
-            Stack:
-        </p>
+	<div style="margin-top: -105px">
+		<div class="row justify-content-md-center text-center">
+			<div class="col col-4 bg-white habilidades" style="border-radius: 15px 15px 15px 15px; box-shadow: 0 5px 5px 0 gray;">
+				<h3>Backend</h3>
 
-        <p>
-            C#, ASP.NET core, SQL  Server, Python 
-        </p>
+				<p>
+					Actualmente busco desarrollarme como programador backend.
+				</p>
 
-        <p class="text-primary cabecera">
-            Experiencia:
-        </p>
+				<p class="text-primary cabecera">
+					Stack:
+				</p>
 
-        <ul>
-            <li>
-                Windows Forms.
-            </li>
-            <li>
-                ASP.NET MVC
-            </li>
-            <li>
-                SQL Server, MySQL, PostgreSQL
-            </li>
-        </ul>
+				<p>
+					C#, ASP.NET core, SQL  Server, Python
+				</p>
 
-    </div>
-</div>
+				<p class="text-primary cabecera">
+					Experiencia:
+				</p>
 
+				<ul>
+					<li>
+						Windows Forms.
+					</li>
+					<li>
+						ASP.NET MVC
+					</li>
+					<li>
+						SQL Server, MySQL, PostgreSQL
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
