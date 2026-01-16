@@ -1,0 +1,65 @@
+[33mcommit 886c51a1349c7fa0a94cd930b0f0a9150c16594d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Tue Nov 18 20:15:20 2025 -0400
+
+    Agrega habilidades al index.cshtml
+
+[33mcommit 3d679d347a59900295da886ae3c72234dfa8fe50[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Tue Nov 18 20:00:14 2025 -0400
+
+    Agrega imagen con clase en custom.css, actualiza descripcion, arregla faltas ortograficas
+
+[33mcommit 0c31f231d36aa2c5b4391f6ccf9417094991dea6[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Tue Nov 18 19:50:43 2025 -0400
+
+    Agrega clase seccion-bienvenida al custom.css
+
+[33mcommit 02b870e862421644bf887957632baef430fd8652[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Tue Nov 18 19:43:20 2025 -0400
+
+    Actualiza descripcion
+
+[33mcommit 3bd84d2dd5d0efc9705e60216a1932d2a81c7db3[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Tue Nov 18 19:42:13 2025 -0400
+
+    Agrega descripcion al index
+
+[33mcommit 4e843e375fdb04db5d00c84a6b6ce7bb4fb12342[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Sat Nov 15 20:19:32 2025 -0400
+
+    agrega clase Persona para pasar nombre y edad al index
+
+[33mcommit 374369fac8bfa7750c13ad22da10a9edb12882d6[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Sat Nov 15 19:39:42 2025 -0400
+
+    arregla bug con style de la imagen
+
+[33mcommit 6706ccb4159f9c71dae5a2d33f85f422eda25654[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Sat Nov 15 19:37:06 2025 -0400
+
+    agrega imagen y acrhivo de Css custom
+
+[33mcommit 726d00625104a61eae9b9e85047f00fe2a5c5beb[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Sat Nov 15 19:25:03 2025 -0400
+
+    Agrega carpeta de imagenes y una imagen
+
+[33mcommit 9a6a1592815ce430086787837a03462fc3d2a51c[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Sat Nov 15 18:09:52 2025 -0400
+
+    Agregar archivos de proyecto.
+
+[33mcommit 5b12aa9de11b042d25e05e5e5355bafc1b01a604[m
+Author: Sebastian Germoso <sebastiangermoso01@gmail.com>
+Date:   Sat Nov 15 18:09:49 2025 -0400
+
+    Agregar .gitattributes y .gitignore.
