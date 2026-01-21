@@ -1,16 +1,21 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Portafolio.Models;
+using Portafolio.Servicios;
 
 namespace Portafolio.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IRepositorioProyectos repositorioProyectos;
+        private readonly IServicioEmail servicioEmail;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IRepositorioProyectos repositorioProyectos, IServicioEmail servicioEmail)
         {
             _logger = logger;
+            this.repositorioProyectos = repositorioProyectos;
+            this.servicioEmail = servicioEmail;
         }
 
         public IActionResult Index()
@@ -18,10 +23,10 @@ namespace Portafolio.Controllers
             var persona = new Persona()
             {
                 Nombre = "Sebastian Germoso Marrero",
-                Edad = 18
+                Edad = 19
             };
 
-            var proyectos = ObtenerProyectos().Take(3).ToList();
+            var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
             var modelo = new HomeIndexDTO() {
                 Proyectos = proyectos,
                 Nombre = persona.Nombre,
@@ -32,37 +37,31 @@ namespace Portafolio.Controllers
         }
 
 
-        public List<ProyectoDTO> ObtenerProyectos()
+        public IActionResult Privacy()
         {
-            return new List<ProyectoDTO>() { new ProyectoDTO { 
-                Titulo = "Amazon",
-                Descipcion = "E-Commerce realizado en ASP.NET Core",
-                Link = "https://amazon.com",
-                ImagenURL = "/imagenes/amazon.PNG"
-            }, new ProyectoDTO{
-                Titulo = "New York Times",
-                Descipcion = "Pagina de noticias en React",
-                Link = "https://nytimes.com",
-                ImagenURL = "/imagenes/nyt.PNG"
-
-            }, new ProyectoDTO{
-                Titulo = "Reddit",
-                Descipcion = "Red social para compartir en comunidades",
-                Link = "https://reddit.com",
-                ImagenURL = "/imagenes/reddit.PNG"
-
-            }, new ProyectoDTO{
-                Titulo = "Steam",
-                Descipcion = "Tienda en linea de videojuegos",
-                Link = "https://storesteampowered.com",
-                ImagenURL = "/imagenes/steam.PNG"
-
-            },
-            };
-
+            return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Proyectos()
+        {
+            var proyectos = repositorioProyectos.ObtenerProyectos();
+
+            return View(proyectos);
+        }
+
+        public IActionResult Contacto()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Contacto(ContactoDTO contactoDTO)
+        {
+            await servicioEmail.Enviar(contactoDTO);
+            return RedirectToAction("Gracias");
+        }
+
+        public IActionResult Gracias()
         {
             return View();
         }
